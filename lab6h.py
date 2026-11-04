@@ -11,3 +11,22 @@
 # TO DO 3: Call the function as instructed in readme.md file.
 # TO DO 4: Run the script. Take screenshot of code and script.
 
+def add_movie(database,name,director,year,runtime):
+    movie={"name":name, "director":director, "year":year, "runtime":runtime}
+    database.append(movie)
+
+def find_movie(database,search_word):
+    results=[]
+    for movie in database:
+        if search_word.lower() in movie ["name"].lower():
+                results.append(movie)
+    return(results)
+    
+def main():
+    movie_database=[]
+    add_movie(movie_database,"Titanic","James Cameron",1997,195)
+    add_movie(movie_database, "Avatar", "James Cameron", 2009, 162)
+    add_movie(movie_database,"Avatar", "James Cameron", 2009, 162)
+    add_movie(movie_database,"Avatar", "James Cameron", 2009, 162)
+    print(find_movie(movie_database,"titanic"))
+main()        
