@@ -12,21 +12,21 @@
 # TO DO 4: Run the script. Take screenshot of code and script.
 
 def add_movie(database,name,director,year,runtime):
-    movie={"name":name, "director":director, "year":year, "runtime":runtime}
+    movie={"Name":name, "Director":director, "Year":year, "Runtime":runtime}
     database.append(movie)
 
 def find_movie(database,search_word):
     results=[]
     for movie in database:
-        if search_word.lower() in movie ["name"].lower():
+        if search_word.lower() in movie ["Name"].lower():
                 results.append(movie)
     return(results)
     
 def main():
     movie_database=[]
     add_movie(movie_database,"Titanic","James Cameron",1997,195)
-    add_movie(movie_database, "Avatar", "James Cameron", 2009, 162)
-    add_movie(movie_database,"Avatar", "James Cameron", 2009, 162)
-    add_movie(movie_database,"Avatar", "James Cameron", 2009, 162)
-    print(find_movie(movie_database,"titanic"))
+    add_movie(movie_database, "Inception", "Christopher Nolan", 2010, 148)
+    add_movie(movie_database,"Alien", "Ridley Scott", 1979, 117)
+    add_movie(movie_database,"The Lord of the Rings", "Peter Jackson", 2001, 178)
+    print(find_movie(movie_database,"alien"))
 main()        
