@@ -10,6 +10,12 @@
 
 def buildtheSet(divisor):
     # Complete this function
+    numbers = set()
+    for num in range (101):
+        if num % divisor == 0:
+            numbers.add(num)
+    return numbers
+
 def main():
     s3 = buildtheSet(3)
     print("s3: ", s3)

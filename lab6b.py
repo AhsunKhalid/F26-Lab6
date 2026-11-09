@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: AHSUN KHALID
+# Date: 04/11/2026
 # Purpose: Practice Set Operations.
 # Usage: ./lab6b.py
 # TO DO 1: Copy the code from lab6a.py and paste here.
